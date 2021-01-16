@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Styles -->
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/tablet.css" media="min-width:719px" />
+    <link
+      rel="stylesheet"
+      href="./styles/desktop.css"
+      media="min-width:1023px"
+    />
+
+    <title>Frontend Mentor | Pod request access landing page</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="ornament"></div>
+      <div class="mobile--img">
+        <img src="./assets/images/mob-image-host.jpg" alt="" />
+      </div>
+      <div class="main--container">
+        <figure class="logo--container">
+          <img src="./assets/icons/logo.svg" alt="" />
+        </figure>
+        <div class="description--container">
+          <section class="description">
+            <h1 class="description--title">
+              Publish your podcasts <span>everywhere</span>
+            </h1>
+            <p class="description--text">
+              Upload your audio to Pod with a single click. We’ll then
+              distribute your podcast to Spotify, Apple Podcasts, Google
+              Podcasts, Pocket Casts and more!
+            </p>
+          </section>
+          <div class="podcasts--icons">
+            <div class="pd--iconx">
+              <img
+                src="./assets/icons/spotify.svg"
+                alt="Spotify Podcasts icon"
+              />
+            </div>
+            <div class="pd--iconx">
+              <img
+                src="./assets/icons/apple-podcast.svg"
+                alt="Apple Podcasts icon"
+              />
+            </div>
+            <div class="pd--icon">
+              <img
+                src="./assets/icons/google-podcasts.svg"
+                alt="Google Podcasts icon"
+              />
+            </div>
+            <div class="pd--icon">
+              <img
+                src="./assets/icons/pocket-casts.svg"
+                alt="Pocket Podcasts icon"
+              />
+            </div>
+          </div>
+          <div class="form--container">
+            <form onsubmit="event.preventDefault()" action="">
+              <div>
+                <input
+                  id="input"
+                  aria-label="Your email"
+                  type="text"
+                  placeholder="Email address"
+                />
+              </div>
+              <button onclick="validateMail()" id="btn">Request access</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>

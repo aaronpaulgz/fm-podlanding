@@ -1,0 +1,154 @@
+:root {
+  --Green: hsl(157, 74%, 62%);
+  --Light-Green: hsl(157, 100%, 85%);
+  --Red: hsl(0, 96%, 61%);
+  --Grey-100: hsl(225, 40%, 83%);
+  --Grey-200: hsl(225, 21%, 45%);
+  --Grey-300: hsl(225, 26%, 23%);
+  --Grey-300-005: hsla(225, 26%, 23%, 0.7);
+  --Grey-400: hsl(224, 35%, 11%);
+  --White: hsl(0, 0%, 100%);
+
+  --Font: "Chivo";
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-y: hidden;
+}
+
+.mobile--img {
+  position: absolute;
+  z-index: 1;
+}
+
+.mobile--img img {
+  width: 100vw;
+  height: 100vh;
+}
+
+.logo--container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 62px 0;
+}
+
+.main--container {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100vh;
+  font-family: var(--Font);
+  color: var(--White);
+  background-color: var(--Grey-300-005);
+}
+
+.description--container {
+  display: flex;
+  flex-direction: column;
+}
+
+.description {
+  text-align: center;
+  max-width: 375px;
+  margin: 0 auto;
+}
+
+.description--title {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  color: var(--Green);
+}
+
+.description--title span {
+  color: var(--White);
+}
+
+.description--text {
+  margin: 32px 0 0 0;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.6rem;
+}
+
+.podcasts--icons {
+  display: flex;
+  flex-wrap: wrap;
+  width: 375px;
+  max-width: 375px;
+  margin: 32px auto;
+  justify-content: space-evenly;
+}
+
+.pd--icon,
+.pd--iconx {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pd--icon img {
+  width: 82px;
+  margin: 0 4px;
+}
+
+.pd--iconx img {
+  width: 62px;
+  margin: 0 4px;
+}
+
+.form--container form {
+  display: flex;
+  flex-direction: column;
+  max-width: 375px;
+  margin: 0 auto;
+}
+
+.form--container form input {
+  height: 46px;
+  width: 100%;
+  border: none;
+  border-radius: 46px;
+  outline: none;
+  background-color: var(--Grey-300);
+  color: var(--Grey-100);
+  padding: 0 23px;
+}
+
+.form--container form input::placeholder {
+  font-weight: 700;
+  color: var(--Grey-100);
+}
+
+.form--container form button {
+  height: 46px;
+  width: 100%;
+  border: none;
+  border-radius: 46px;
+  outline: none;
+  font-weight: 700;
+  font-size: 0.9rem;
+  background-color: var(--Green);
+  color: var(--Grey-400);
+  padding: 0 23px;
+  margin: 10px 0 0 0;
+}
+
+.warn--container {
+  padding: 0 0 0 24px;
+  margin: 6px 0 0 0;
+}
+
+.warn {
+  color: var(--Red);
+  font-size: 0.8rem;
+}
