@@ -1,21 +1,21 @@
-let $btn = document.getElementById("btn");
-let $input = document.getElementById("input");
+let $Mobbtn = document.getElementById("mob-btn");
+let $Mobinput = document.getElementById("mob-input");
 
-const validateMail = () => {
-  let $input = document.getElementById("input");
-  if ($input.value.length < 6) {
-    // $input.nextElementSibling.style.visibility = "visible";
-    $input.insertAdjacentHTML(
+const mobvalidateMail = () => {
+  let $Mobinput = document.getElementById("mob-input");
+  if ($Mobinput.value.length < 6) {
+    // $Mobinput.nextElementSibling.style.visibility = "visible";
+    $Mobinput.insertAdjacentHTML(
       "afterend",
       `<div class="warn--container">
           <p class="warn">Oops! Please check your mail</p>
       </div>`
     );
   } else {
-    $input.value = "";
+    setTimeout(location.reload(), 3000);
   }
 };
 
-$input.addEventListener("focus", () => {
-  $input.nextElementSibling.style.display = "none";
+$Mobinput.addEventListener("focus", () => {
+  $Mobinput.nextElementSibling.style.display = "none";
 });

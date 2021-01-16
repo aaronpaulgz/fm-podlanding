@@ -24,7 +24,7 @@ body {
 
 .mobile--img {
   position: absolute;
-  z-index: 1;
+  /* z-index: 5; */
 }
 
 .mobile--img img {
@@ -32,11 +32,15 @@ body {
   height: 100vh;
 }
 
-.logo--container {
+.mb--logo--container {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 62px 0;
+}
+
+.logo--container {
+  display: none;
 }
 
 .main--container {
@@ -52,6 +56,10 @@ body {
 .description--container {
   display: flex;
   flex-direction: column;
+}
+
+.bg-img {
+  display: none;
 }
 
 .description {
@@ -106,14 +114,14 @@ body {
   margin: 0 4px;
 }
 
-.form--container form {
+.mob--form--container form {
   display: flex;
   flex-direction: column;
   max-width: 375px;
   margin: 0 auto;
 }
 
-.form--container form input {
+.mob--form--container form input {
   height: 46px;
   width: 100%;
   border: none;
@@ -124,12 +132,12 @@ body {
   padding: 0 23px;
 }
 
-.form--container form input::placeholder {
+.mob--form--container form input::placeholder {
   font-weight: 700;
   color: var(--Grey-100);
 }
 
-.form--container form button {
+.mob--form--container form button {
   height: 46px;
   width: 100%;
   border: none;
@@ -151,4 +159,16 @@ body {
 .warn {
   color: var(--Red);
   font-size: 0.8rem;
+}
+
+.ornament {
+  visibility: hidden;
+  width: 240px;
+  height: 240px;
+  position: absolute;
+  z-index: 3;
+}
+
+.form--container {
+  display: none;
 }
