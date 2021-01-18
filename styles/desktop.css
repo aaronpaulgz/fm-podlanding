@@ -1,0 +1,86 @@
+body {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.main {
+  position: absolute;
+  right: 0;
+  top: calc(100vh - 760px);
+  width: 1275px;
+  min-width: 1000px;
+  max-width: 1400px;
+  height: 640px;
+  min-height: 620px;
+  max-height: 700px;
+}
+
+.main--container {
+  height: 100%;
+}
+
+.description {
+  max-width: 600px;
+}
+
+.description--container {
+  bottom: 0;
+}
+
+.description--title {
+  font-size: 2.8rem;
+}
+
+.description--text {
+  max-width: 480px;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+
+.form--container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  margin-top: 42px;
+  border-radius: 56px;
+  background-color: var(--Grey-300);
+  max-width: 480px;
+  min-height: 56px;
+}
+
+.podcasts--icons {
+  display: flex;
+  width: 540px;
+  max-width: 600px;
+  margin: 48px 0 0 0;
+  justify-content: space-around;
+}
+
+.pd--icon,
+.pd--iconx {
+  width: 25%;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+}
+
+.pd--icon img {
+  width: 120px;
+  margin: 0 12px 0 0;
+}
+
+.pd--iconx img {
+  width: 100px;
+}
+
+.ornament {
+  position: absolute;
+  left: calc(100vw - 240px);
+  bottom: 60px;
+}
+
+.mobile--img img {
+  display: none;
+}
