@@ -32,10 +32,10 @@
     <title>Frontend Mentor | Pod request access landing page</title>
   </head>
   <body>
+    <div class="ornament">
+      <img src="./assets/icons/bg-pattern-dots.svg" alt="" />
+    </div>
     <main class="main">
-      <div class="ornament">
-        <img src="./assets/icons/bg-pattern-dots.svg" alt="" />
-      </div>
       <div class="mobile--img">
         <img src="./assets/images/mob-image-host.jpg" alt="" />
       </div>
@@ -46,9 +46,13 @@
         <figure class="mb--logo--container">
           <img src="./assets/icons/logo.svg" alt="" />
         </figure>
-        <figure class="bg-img">
+        <picture class="bg-img">
+          <source
+            media="(min-width: 1200px)"
+            srcset="./assets/images/dsk-image-host.jpg"
+          />
           <img src="./assets/images/tab-image-host.jpg" alt="" />
-        </figure>
+        </picture>
         <div class="description--container">
           <section class="description">
             <h1 class="description--title">
@@ -60,10 +64,15 @@
               Podcasts, Pocket Casts and more!
             </p>
           </section>
-          <div class="form--container">
-            <form id="form--container" action="">
-              <input id="input" type="text" placeholder="Email address" />
-              <button id="btn">Request access</button>
+          <div class="form--container" id="form">
+            <form action="" onsubmit="event.preventDefault()">
+              <input
+                aria-label="input"
+                id="input"
+                type="text"
+                placeholder="Email address"
+              />
+              <button onclick="validateMail()" id="btn">Request access</button>
             </form>
           </div>
           <div class="podcasts--icons">
@@ -96,6 +105,7 @@
             <form onsubmit="event.preventDefault()" action="">
               <div>
                 <input
+                  aria-label="mobile-input"
                   id="mob-input"
                   aria-label="Your email"
                   type="text"
